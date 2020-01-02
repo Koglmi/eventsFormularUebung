@@ -59,5 +59,13 @@ window.addEventListener('load', () => {
 
         info.textContent = vornamecontroll + nachnamecontroll + straßecontroll + plzcontroll + emailcontroll;
     })
+
+    document.getElementById('preis').addEventListener('input', ausgeben);
         
 })
+
+function ausgeben(ev) {
+    document.getElementById('preisanzeige').value = ev.target.value;
+}
+
+
