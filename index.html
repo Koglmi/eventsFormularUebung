@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1>Gewinnspiel</h1>
+
+    <form action="" id="send">
+        <div id="vorname"><span>Vorname:</span><input type="text" id="firstname"></div>
+        <div id="nachname"><span>Nachname:</span><input type="text" id="surname"></div>
+        <div id="straße"><span>Straße:</span><input type="text" id="street"></div>
+        <div id="plza"><span>PLZ:</span><input type="text" id="plz"></div>
+        <div id="mail"><span>E-mail:</span><input type="text" id="email"></div>
+
+        <div id="urlaubsziele">
+            <span>Bevorzugte Urlaubsziele:</span>
+            <input type="checkbox" name="urlaubsziele" value="Europa" id="eu"><span>Europa</span>
+            <input type="checkbox" name="urlaubsziele" value="Asien" id="as"><span>Asien</span>
+            <input type="checkbox" name="urlaubsziele" value="Afrika" id="af"><span>Afrika</span>
+            <input type="checkbox" name="urlaubsziele" value="USA" id="us"><span>USA</span>
+        </div>
+
+        <div id="unterkunft">
+            <span>Welche Art von Unterkunft bevorzugen Sie?</span>
+            <select>
+                <option value="Apartment" id="ap">Apartment</option>
+                <option value="Ferienhaus" id="fe">Ferienhaus</option>
+                <option value="Hotel" id="ho">Hotel</option>
+                <option value="Jugenherberge" id="ju">Jugendherberge</option>
+                <option value="Motel" id="mo">Motel</option>
+            </select>
+        </div>
+
+        <div id="preis">
+            <span>Wie viel Zahlen Sie im Durchschnitt für den Urlaub pro Person?</span>
+            <input type="range" onInput="preis.value=value" name="Euro" min="50" max="10000" value="100" id="preis"><output id="preis"></output><span>€</span>
+        </div>
+
+        <div id="reisen"></div>
+        <span>Reisen Sie allein?</span>
+        <input type="radio" name="reisen" id="alone">JA
+        <input type="radio" name="reisen" id="aloneNO">NEIN
+
+        <div id="birthdate">
+            <span>Geburtsdatum:</span>
+            <input type="date" id="date">
+        </div>
+
+        <!-- <button id="send">SENDEN</button> -->
+        <input type="button" id="sub">
+        <input type="reset" id="res">
+    </form>
+
+    <div>
+        <p id="info"></p>
+    </div>
+    
+</body>
+</html>
