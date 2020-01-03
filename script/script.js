@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-    const sub = document.getElementById('send');
+    const sub = document.getElementById('sub');
 
 
     sub.addEventListener('click', () => {
@@ -19,45 +19,46 @@ window.addEventListener('load', () => {
         const info = document.getElementById('info');
 
         if(vorname.value === '') {
-            vornamecontroll = 'Der Vorname wurde nicht eingegeben!';
+            vornamecontroll = 'Der Vorname wurde nicht eingegeben! ';
         }
         else{
             vornamecontroll = '';
         }
 
         if(nachname.value === '') {
-            nachnamecontroll = 'Der Nachname wurde nicht eingegeben!';
+            nachnamecontroll = 'Der Nachname wurde nicht eingegeben! ';
         }
         else{
             nachnamecontroll = '';
         }
 
         if(straße.value === '') {
-            straßecontroll = 'Der Straße wurde nicht eingegeben!';
-
+            straßecontroll = 'Der Straße wurde nicht eingegeben! ';
         }
         else{
             straßecontroll = '';
         }
 
         if(plz.value === ''){
-            plzcontroll = 'Die Postleitzahl wurde nicht eingegeben!';
+            plzcontroll = 'Die Postleitzahl wurde nicht eingegeben! ';
         }
         else {
             plzcontroll = '';
         }
 
         if(email.value === ""){
-            emailcontroll = 'Die Mail Adresse wurde nicht eingegeben!';
+            emailcontroll = 'Die Mail Adresse wurde nicht eingegeben! ';
         }
         else {
             emailcontroll = '';
         }
 
+
         // alert(vornamecontroll + nachnamecontroll + straßecontroll + plzcontroll + emailcontroll);
 
 
         info.textContent = vornamecontroll + nachnamecontroll + straßecontroll + plzcontroll + emailcontroll;
+
     })
 
     document.getElementById('preis').addEventListener('input', ausgeben);
