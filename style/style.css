@@ -42,15 +42,20 @@ table {
     width: 100%;
 }
 
-input[type="text"] {
+input[type="text"], input[type="email"], input[type="number"] {
     border: none;
     outline: none;
     border-bottom: solid lightgray 1.5px;
     transition: 200ms border-bottom ease-in-out;
 }
 
+input[type="date"] {
+    border: none;
+    outline: none;
+}
+
 /* wenn man hinein klickt ändert sich die Farbe */
-input:focus[type="text"] {
+input:focus[type="text"], input:focus[type="email"], input:focus[type="number"] {
     border-bottom: solid cornflowerblue 1.5px;
 }
 
