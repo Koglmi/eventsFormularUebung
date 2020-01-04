@@ -36,6 +36,8 @@ window.addEventListener('load', () => {
         const plz = document.getElementById('plz');
         const email = document.getElementById('email');
 
+        let controll;
+
         let vornamecontroll;
         let nachnamecontroll;
         let straßecontroll;
@@ -80,15 +82,9 @@ window.addEventListener('load', () => {
         }
 
     
-        
+        controll = vornamecontroll + nachnamecontroll + straßecontroll + plzcontroll + emailcontroll;
 
-
-        // alert(vornamecontroll + nachnamecontroll + straßecontroll + plzcontroll + emailcontroll);
-
-
-        
-
-        if(checkc === true && emailcontroll === '') {
+        if(checkc === true && controll === '') {
 
             if(checkr === true) {
                 hideAll();
@@ -99,7 +95,8 @@ window.addEventListener('load', () => {
             }
         }
         else{
-            info.textContent = vornamecontroll + nachnamecontroll + straßecontroll + plzcontroll + emailcontroll;
+            info.textContent = controll;
+            // alert(controll);
         }
 
         
