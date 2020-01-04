@@ -3,7 +3,7 @@ body {
     width: 100vw; /* view width*/
     height: 100vh; /* view height*/
     margin: 0 auto;
-    overflow: hidden; /* scroll button versteckt*/
+    overflow-x: hidden; /* scroll button versteckt*/
     display: flex;
     justify-content: center;
     align-items: center;

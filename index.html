@@ -43,20 +43,20 @@
                         <span>Bevorzugte Urlaubsziele:</span>
                     </td>
                     <td>
-                        <input type="checkbox" name="urlaubsziele" value="Europa" id="eu"><span>Europa</span>
+                        <input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="Europa" id="europa" onclick="checkbox();"><span>Europa</span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="urlaubsziele" value="Asien" id="as"><span>Asien</span>
+                        <input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="Asien" id="asien" onclick="checkbox();"><span>Asien</span>
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="urlaubsziele" value="Afrika" id="af"><span>Afrika</span></td>
+                    <td><input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="Afrika" id="afrika" onclick="checkbox();"><span>Afrika</span></td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="urlaubsziele" value="USA" id="us"><span>USA</span>
+                        <input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="USA" id="usa" onclick="checkbox();"><span>USA</span>
                     </td>
                 </tr>
 
@@ -87,8 +87,8 @@
                         <span>Reisen Sie allein?</span>
                     </td>
                     <td>
-                        <input type="radio" name="reisen" id="alone">JA
-                        <input type="radio" name="reisen" id="aloneNO">NEIN
+                        <input type="radio" class="reisen" name="reisen" id="alone" onclick="radiocheck()">JA
+                        <input type="radio" class="reisen" name="reisen" id="aloneNO" onclick="radiocheck()">NEIN
                     </td>
                 </tr>
                 <tr>
@@ -103,7 +103,7 @@
             </table>
 
                 <div id="buttonwrapper">
-                    <input type="button" id="sub" value="SENDEN" class="buttons">
+                    <input type="button" id="sub" value="SENDEN">
                     <input type="reset" id="res" class="buttons">
                 </div>
                 
