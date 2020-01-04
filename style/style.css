@@ -60,7 +60,7 @@ input:focus[type="text"], input:focus[type="email"], input:focus[type="number"] 
 }
 
 #buttonwrapper {
-    width: 100%;
+    width: 60%;
     margin: 2vh 0;
     padding: 0vh 1.5vw;
     display: flex;
