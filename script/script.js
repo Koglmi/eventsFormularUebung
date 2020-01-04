@@ -19,26 +19,6 @@ window.addEventListener('load', () => {
         checkbox();
     })
 
-    // ap.addEventListener ('change', () => {
-    //     select();
-    // })
-
-    // fe.addEventListener('change', () => {
-    //     select();
-    // })
-
-    // ho.addEventListener('change', () => {
-    //     select();
-    // })
-
-    // ju.addEventListener('change', () => {
-    //     select();
-    // })
-
-    // mo.addEventListener('change', () => {
-    //     select();
-    // })
-
     alone.addEventListener('click', () => {
         ra(); 
     })
@@ -106,16 +86,20 @@ window.addEventListener('load', () => {
         // alert(vornamecontroll + nachnamecontroll + straßecontroll + plzcontroll + emailcontroll);
 
 
-        info.textContent = vornamecontroll + nachnamecontroll + straßecontroll + plzcontroll + emailcontroll;
+        
 
         if(checkc === true && emailcontroll === '') {
 
             if(checkr === true) {
                 hideAll();
                 changeDisplayProperty('teilnahme', 'block');
+            }  
+            else {
+
             }
-            
-            
+        }
+        else{
+            info.textContent = vornamecontroll + nachnamecontroll + straßecontroll + plzcontroll + emailcontroll;
         }
 
         
