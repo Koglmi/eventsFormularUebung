@@ -3,6 +3,51 @@ window.addEventListener('load', () => {
     const sub = document.getElementById('sub');
     
 
+    europa.addEventListener('click', () => {
+        checkbox();
+    })
+
+    asien.addEventListener('click', () => {
+        checkbox();
+    })
+
+    afrika.addEventListener('click', () => {
+        checkbox();
+    })
+
+    usa.addEventListener('click', () => {
+        checkbox();
+    })
+
+    // ap.addEventListener ('change', () => {
+    //     select();
+    // })
+
+    // fe.addEventListener('change', () => {
+    //     select();
+    // })
+
+    // ho.addEventListener('change', () => {
+    //     select();
+    // })
+
+    // ju.addEventListener('change', () => {
+    //     select();
+    // })
+
+    // mo.addEventListener('change', () => {
+    //     select();
+    // })
+
+    alone.addEventListener('click', () => {
+        ra(); 
+    })
+
+    aloneNO.addEventListener('click', () => {
+        ra();
+    })
+
+
     
     sub.addEventListener('click', () => {
         const vorname = document.getElementById('firstname');
@@ -63,9 +108,14 @@ window.addEventListener('load', () => {
 
         info.textContent = vornamecontroll + nachnamecontroll + straßecontroll + plzcontroll + emailcontroll;
 
-        if(check === true) {
-            hideAll();
-            changeDisplayProperty('teilnahme', 'block');
+        if(checkc === true && emailcontroll === '') {
+
+            if(checkr === true) {
+                hideAll();
+                changeDisplayProperty('teilnahme', 'block');
+            }
+            
+            
         }
 
         
@@ -77,34 +127,74 @@ window.addEventListener('load', () => {
         
 })
 
-let check = false;
+let checkc = false;
+let checkr = false;
 
 function ausgeben(ev) {
     document.getElementById('preisanzeige').value = ev.target.value;
 }
 
 function checkbox() {
+
     let urlaubsziele = document.getElementsByClassName('urlaubsziele');
 
     if(urlaubsziele[0].checked) {
-        check = true;
+        checkc = true;
     }
 
     if(urlaubsziele[1].checked) {
-        check = true;
+        checkc = true;
     }
 
     if(urlaubsziele[2].checked) {
-        check = true;
+        checkc = true;
     }
 
     if(urlaubsziele[3].checked) {
-        check = true;
+        checkc = true;
     }
 
-    if(check === false) {       
+    if(checkc === false) {       
     }
+}
 
+// function select() {
+
+//     checks = true;
+//     // let unterkunft = document.getElementsByClassName('unterkunft');
+
+//     // if(unterkunft[0].checked) {
+//     //     checks = true;
+//     // }
+
+//     // if(unterkunft[1].checked) {
+//     //     checks = true;
+//     // }
+
+//     // if(unterkunft[2].checked) {
+//     //     checks = true;
+//     // }
+
+//     // if(unterkunft[3].checked) {
+//     //     checks = true;
+//     // }
+
+//     // if(unterkunft[4].checked) {
+//     //     checks = true;
+//     // }
+
+//     // if(checks === false){
+//     //     checks = false;
+//     // }
+    
+// }
+
+// function range() {
+//     checkr = true;
+// }
+
+function ra(){
+    checkr = true;
 }
 
 function changeDisplayProperty(id, property) {

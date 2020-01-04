@@ -43,20 +43,20 @@
                         <span>Bevorzugte Urlaubsziele:</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="Europa" id="europa" onclick="checkbox();"><span>Europa</span>
+                        <input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="Europa" id="europa" class="unterkunft"><span>Europa</span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="Asien" id="asien" onclick="checkbox();"><span>Asien</span>
+                        <input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="Asien" id="asien" class="unterkunft"><span>Asien</span>
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="Afrika" id="afrika" onclick="checkbox();"><span>Afrika</span></td>
+                    <td><input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="Afrika" id="afrika" class="unterkunft"><span>Afrika</span></td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="USA" id="usa" onclick="checkbox();"><span>USA</span>
+                        <input type="checkbox" class="urlaubsziele" name="urlaubsziele" value="USA" id="usa" class="unterkunft"><span>USA</span>
                     </td>
                 </tr>
 
@@ -66,11 +66,11 @@
                     </td>
                     <td>
                         <select>
-                            <option value="Apartment" id="ap">Apartment</option>
-                            <option value="Ferienhaus" id="fe">Ferienhaus</option>
-                            <option value="Hotel" id="ho">Hotel</option>
-                            <option value="Jugenherberge" id="ju">Jugendherberge</option>
-                            <option value="Motel" id="mo">Motel</option>
+                            <option value="Apartment" id="ap" class="unterkunft">Apartment</option>
+                            <option value="Ferienhaus" id="fe" class="unterkunft">Ferienhaus</option>
+                            <option value="Hotel" id="ho" class="unterkunft">Hotel</option>
+                            <option value="Jugenherberge" id="ju" class="unterkunft">Jugendherberge</option>
+                            <option value="Motel" id="mo" class="unterkunft">Motel</option>
                         </select>
                     </td>
                 </tr>
@@ -87,8 +87,8 @@
                         <span>Reisen Sie allein?</span>
                     </td>
                     <td>
-                        <input type="radio" class="reisen" name="reisen" id="alone" onclick="radiocheck()">JA
-                        <input type="radio" class="reisen" name="reisen" id="aloneNO" onclick="radiocheck()">NEIN
+                        <input type="radio" class="reisen" name="reisen" id="alone">JA
+                        <input type="radio" class="reisen" name="reisen" id="aloneNO">NEIN
                     </td>
                 </tr>
                 <tr>
@@ -96,7 +96,7 @@
                         <span>Geburtsdatum:</span>
                     </td>
                     <td>
-                        <input type="date" id="date">
+                        <input type="date" id="date" value="2000-01-01" max="2010-01-01" min="1900-01-01">
                     </td>
                 </tr>
 
