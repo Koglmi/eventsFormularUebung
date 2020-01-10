@@ -27,10 +27,11 @@ tr {
 
 #content {
     width: 50%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    position: fixed;
+    position: fixed; */
 }
 
 table {
@@ -115,7 +116,16 @@ select option {
 }
 
 #teilnahme {
+    width: 100vw;
+    height: 100vh;
     display: none;
+    background-image: url("background.jpg");
+    /* background-color: #efefef */
+    background-repeat: repeat-x; 
+}
+
+#teilnahme h1 {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
