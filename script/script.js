@@ -28,6 +28,19 @@ window.addEventListener('load', () => {
     })
 
 
+    // let checkrange = false;
+
+    // preisanzeige.addEventListener('change', () => {
+    //     checkrange = true;
+    // })
+
+    // if(preisanzeige.value === '') {
+    //     checkrange = false;
+    // }
+
+    // else{
+    //     checkrange = true;
+    // }
     
     sub.addEventListener('click', () => {
         const vorname = document.getElementById('firstname');
