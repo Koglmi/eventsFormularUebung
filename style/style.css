@@ -121,7 +121,7 @@ select option {
     display: none;
     background-image: url("background.jpg");
     /* background-color: #efefef */
-    background-repeat: repeat-x; 
+    background-repeat: no-repeat; 
 }
 
 #teilnahme h1 {
